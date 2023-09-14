@@ -54,7 +54,7 @@ body {
 
     }
     #aboutMeGrid {
-        margin-top: 80px;
+        margin-top: 30px;
     }
     .griddy {
         display: grid;
@@ -67,24 +67,25 @@ body {
 
     .item1 {
         grid-area: header;
+        font-size: 125%;
     }
     .item2 {
         /* comment */
         grid-area: blank1;
-        width: 15vw;
+        width: 5vw;
     }
     .item3 {
         grid-area: paragraph1;
-        width: 45vw;
+        width: 50vw;
         text-align: center;
         position: fixed;
-        left: 15vw;
+        left: 5vw;
         top: 35vh;
         font-size: 85%;
     }
     .item4 {
         grid-area: image;
-        width: 45vw;
+        width: 50vw;
         text-align: center;
         position: fixed;
         left: 55vw;
@@ -92,7 +93,7 @@ body {
     }
     .item5 {
         grid-area: blank2;
-        width: 15vw;
+        width: 5vw;
     }
 /* #endregion Body*/
 
@@ -183,6 +184,9 @@ body {
         background-repeat: no-repeat;
     }
     
+    #aboutMeGrid {
+        margin-top: 80px;
+    }
     .griddy {
         display: grid;
         grid-template-areas: 
@@ -216,6 +220,7 @@ body {
         position: fixed;
         left: 55vw;
         top: 40vh;
+        border-radius: 30px;
     }
     .item5 {
         grid-area: blank2;
