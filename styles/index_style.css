@@ -1,0 +1,118 @@
+.active {
+    background-color: #0c0c9a;
+}
+.passive {
+    background-color: #18456e;
+}
+#topNavbar {
+    display: inline-block;
+    background-color: #1e4f7e;
+    overflow: hidden;
+    border: 1px solid #17395aa0 ;
+    width: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+#topNavbar a {
+    float: left;
+    color: #78fbcf;
+    padding: 8px 20px;
+    border: 2px solid #083157;
+    text-align: center;
+    text-decoration: none;
+    margin: 3px;
+    border-radius: 8px;
+}
+#topNavbar a:hover {
+    color: #07666d;
+    background-color: #0da2b0;
+}
+#topNavbar a:active {
+    color: #202020;
+    background-color: #e60dc2;
+}
+
+body {
+    background-image: url('../../images/Background.jpg');
+    background-size: 100vw 85vh;
+    background-position-x: center;
+    background-position-y: 37px;
+    background-repeat: no-repeat;
+    background-color: #0f253f;
+}
+    h1 {
+        text-align: center;
+        color: #00ffff;
+        font-size: 300%;
+        margin-top: 20vh;
+    }
+    p {
+        text-align: center;
+        color: #00cccc;
+        font-size: 125%;
+
+    }
+    .inline_paragraph {
+        display: flex;
+        height: 200px;
+        width: 50vw;
+        overflow: hidden;
+        align-content: center;
+        justify-content: center;
+    }
+
+
+
+#aboutMeHead {
+    color: #333;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    background-color: #1e4f7e;
+    color: white;
+    text-align: center;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 192px;
+    height: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid #00000088;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.5;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  /* github */
+  .fa-github {
+    background-color: #008b8b;
+    color: white;
+  }
+
+  /* google */
+  .fa-envelope {
+    background-color: #e92c2c;
+    color: white;
+  }
