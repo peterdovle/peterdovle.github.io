@@ -54,7 +54,7 @@ body {
 
     }
     #aboutMeGrid {
-        margin-top: 30px;
+        margin-top: 10px;
     }
     .griddy {
         display: grid;
@@ -80,7 +80,7 @@ body {
         text-align: center;
         position: fixed;
         left: 5vw;
-        top: 35vh;
+        top: 20vh;
         font-size: 85%;
     }
     .item4 {
@@ -89,7 +89,7 @@ body {
         text-align: center;
         position: fixed;
         left: 55vw;
-        top: 40vh;
+        top: 25vh;
     }
     .item5 {
         grid-area: blank2;
