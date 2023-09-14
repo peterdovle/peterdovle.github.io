@@ -1,3 +1,5 @@
+
+/* #region NavBar*/
 .active {
     background-color: #0c0c9a;
 }
@@ -13,12 +15,14 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: fit-content;
+    padding: 2px;
+    border-radius: 5px;
 }
 #topNavbar a {
     float: left;
     color: #78fbcf;
-    padding: 8px 20px;
+    padding: 6px 10px;
     border: 2px solid #083157;
     text-align: center;
     text-decoration: none;
@@ -33,20 +37,16 @@
     color: #202020;
     background-color: #e60dc2;
 }
+/* #endregion comment 2*/
 
+/* #region Body*/
 body {
-    background-image: url('../../images/Background.jpg');
-    background-size: 100vw 85vh;
-    background-position-x: center;
-    background-position-y: 37px;
-    background-repeat: no-repeat;
     background-color: #0f253f;
 }
     h1 {
         text-align: center;
         color: #00ffff;
         font-size: 300%;
-        margin-top: 20vh;
     }
     p {
         text-align: center;
@@ -54,35 +54,56 @@ body {
         font-size: 125%;
 
     }
-    .inline_paragraph {
-        display: flex;
-        height: 200px;
-        width: 50vw;
-        overflow: hidden;
-        align-content: center;
-        justify-content: center;
+    #aboutMeGrid {
+        margin-top: 80px;
+    }
+    .griddy {
+        display: grid;
+        grid-template-areas: 
+        'header header header'
+        'blank1 paragraph1 blank2';
+        gap: 5px;
+        padding: 5px;
     }
 
+    .item1 {
+        grid-area: header;
+    }
+    .item2 {
+        /* comment */
+        grid-area: blank1;
+        width: 25%;
+    }
+    .item3 {
+        grid-area: paragraph1;
+        width: 50vw;
+        text-align: center;
+        position: fixed;
+        left: 25vw;
+        top: 35vh;
+    }
+    .item4 {
+        grid-area: blank2;
+        width: 25%;
+    }
+/* #endregion Body*/
 
-
-#aboutMeHead {
-    color: #333;
-}
-
-
+/* #region Footer*/
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100vw;
+    width: fit-content;
     background-color: #1e4f7e;
     color: white;
     text-align: center;
+    padding: 2px 5px;
+    border-radius: 5px;
 }
 .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 192px;
+    padding: 10px;
+    font-size: 20px;
+    width: 48px;
     height: 16px;
     text-align: center;
     text-decoration: none;
@@ -116,3 +137,61 @@ body {
     background-color: #e92c2c;
     color: white;
   }
+/* #endregion Footer*/
+
+@media only screen and (min-width: 1100px) {
+    #topNavbar {
+        display: inline-block;
+        background-color: #1e4f7e;
+        overflow: hidden;
+        border: 1px solid #17395aa0 ;
+        width: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+    }
+    #topNavbar a {
+        float: left;
+        color: #78fbcf;
+        padding: 8px 20px;
+        border: 2px solid #083157;
+        text-align: center;
+        text-decoration: none;
+        margin: 3px;
+        border-radius: 8px;
+    }
+    
+    
+    body {
+        background-image: url('../../images/Background.jpg');
+        background-size: 100vw 85vh;
+        background-position-x: center;
+        background-position-y: 37px;
+        background-repeat: no-repeat;
+    }
+    
+    
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        background-color: #1e4f7e;
+        color: white;
+        text-align: center;
+    }
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 192px;
+        height: 16px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 10px;
+        border: 2px solid #00000088;
+        margin-top: 3px;
+        margin-bottom: 3px;
+      }
+
+}
