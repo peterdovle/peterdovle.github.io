@@ -1,4 +1,4 @@
-/* #region Navbar */
+/* #region NavBar*/
 .active {
     background-color: #0c0c9a;
 }
@@ -21,7 +21,7 @@
 #topNavbar a {
     float: left;
     color: #78fbcf;
-    padding: 8px 20px;
+    padding: 6px 10px;
     border: 2px solid #083157;
     text-align: center;
     text-decoration: none;
@@ -36,9 +36,9 @@
     color: #202020;
     background-color: #e60dc2;
 }
-/* #endregion navbar */
+/* #endregion comment 2*/
 
-/* #region body */
+/* #region Body*/
 body {
     background-color: #0f253f;
 }
@@ -46,28 +46,21 @@ body {
         text-align: center;
         color: #00ffff;
         font-size: 300%;
-        margin-top: 10vh;
-    }
-    h2 {
-        text-align: center;
-        color: #00ffff;
-        font-size: 150%;
     }
     p {
         text-align: center;
         color: #00cccc;
         font-size: 125%;
-    }
 
-    #Microbit_SCD30 {
+    }
+    #aboutMeGrid {
         margin-top: 10px;
     }
     .griddy {
         display: grid;
         grid-template-areas: 
-        'header header'
-        'paragraph1 image1' 
-        'paragraph1 image2';
+        'header header header header'
+        'blank1 paragraph1 image blank2';
         gap: 5px;
         padding: 5px;
     }
@@ -76,41 +69,35 @@ body {
         grid-area: header;
         font-size: 125%;
     }
-    
     .item2 {
+        /* comment */
+        grid-area: blank1;
+        width: 5vw;
+    }
+    .item3 {
         grid-area: paragraph1;
         width: 50vw;
         text-align: center;
         position: fixed;
         left: 5vw;
-        top: 35vh;
-        font-size: 100%;
-    }
-    .item3 {
-        grid-area: image1;
-        width: 35vw;
-        text-align: center;
-        position: fixed;
-        left: 65vw;
-        top: 42.5vh;
-    }
-    #Image_SCD30 {
-        width: 70%;
+        top: 20vh;
+        font-size: 85%;
     }
     .item4 {
-        grid-area: image2;
-        width: 35vw;
+        grid-area: image;
+        width: 50vw;
         text-align: center;
         position: fixed;
-        left: 65vw;
-        top: 65vh;
+        left: 55vw;
+        top: 25vh;
     }
-    #Image_microbit {
-        width: 60%;
+    .item5 {
+        grid-area: blank2;
+        width: 5vw;
     }
-/* #endregion body */    
+/* #endregion Body*/
 
-/* #region footer*/
+/* #region Footer*/
 .footer {
     position: fixed;
     left: 0;
@@ -133,35 +120,37 @@ body {
     border: 2px solid #00000088;
     margin-top: 3px;
     margin-bottom: 3px;
-}   
-      /* Add a hover effect if you want */
-      .fa:hover {
-        opacity: 0.5;
-      }
-      
-      /* Set a specific color for each brand */
-      
-      /* Facebook */
-      .fa-facebook {
-        background: #3B5998;
-        color: white;
-      }
-    
-      /* github */
-      .fa-github {
-        background-color: #008b8b;
-        color: white;
-      }
-    
-      /* google */
-      .fa-envelope {
-        background-color: #e92c2c;
-        color: white;
-      }
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.5;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  /* github */
+  .fa-github {
+    background-color: #008b8b;
+    color: white;
+  }
+
+  /* google */
+  .fa-envelope {
+    background-color: #e92c2c;
+    color: white;
+  }
 /* #endregion Footer*/
 
 @media only screen and (min-width: 800px) {
-/* #region navbar bigscreen*/
+    
+    /* #region navbar bigscreen*/
     #topNavbar {
         display: inline-block;
         background-color: #1e4f7e;
@@ -183,69 +172,63 @@ body {
         margin: 3px;
         border-radius: 8px;
     }
-/* #endregion navbar bigscreen*/
- 
+    /* #endregion navbar bigscreen*/
 
-/* #region body bigscreen*/
+
+    /* #region body bigscreen*/
     body {
         background-size: 100vw 85vh;
-            background-position-x: center;
-            background-position-y: 37px;
-            background-repeat: no-repeat;
-        }
-        
-        #aboutMeGrid {
-            margin-top: 80px;
-        }
-        .griddy {
-            display: grid;
-            grid-template-areas: 
-            'header header header'
-            'paragraph1 image1 image2';
-            gap: 5px;
-            padding: 5px;
-        }
+        background-position-x: center;
+        background-position-y: 37px;
+        background-repeat: no-repeat;
+    }
     
-        .item1 {
-            grid-area: header;
-            font-size: 125%;
-        }
-        
-        .item2 {
-            grid-area: paragraph1;
-            width: 40vw;
-            text-align: center;
-            position: fixed;
-            left: 5vw;
-            top: 35vh;
-            font-size: 100%;
-        }
-        .item3 {
-            grid-area: image1;
-            width: 20vw;
-            text-align: center;
-            position: fixed;
-            left: 52.5vw;
-            top: 40vh;
-        }
-        #Image_SCD30 {
-            width: 100%;
-        }
-        .item4 {
-            grid-area: image2;
-            width: 20vw;
-            text-align: center;
-            position: fixed;
-            left: 80vw;
-            top: 40vh;
-        }
-        #Image_microbit {
-            width: 90%;
-        }
-/* #endregion body bigscreen*/
-        
+    #aboutMeGrid {
+        margin-top: 80px;
+    }
+    .griddy {
+        display: grid;
+        grid-template-areas: 
+        'header header header header'
+        'blank1 paragraph1 image blank2';
+        gap: 5px;
+        padding: 5px;
+    }
+
+    .item1 {
+        grid-area: header;
+    }
+    .item2 {
+        /* comment */
+        grid-area: blank1;
+        width: 20vw;
+    }
+    .item3 {
+        grid-area: paragraph1;
+        width: 40vw;
+        text-align: center;
+        position: fixed;
+        left: 20vw;
+        top: 35vh;
+        font-size: 100%;
+    }
+    .item4 {
+        grid-area: image;
+        width: 40vw;
+        text-align: center;
+        position: fixed;
+        left: 55vw;
+        top: 40vh;
+        border-radius: 30px;
+    }
+    .item5 {
+        grid-area: blank2;
+        width: 20vw;
+    }
+    /* #endregion body bigscreen*/
     
-/* #region footer bigscreen*/
+
+    /* #region footer bigscreen*/
     .footer {
         position: fixed;
         left: 0;
@@ -266,8 +249,8 @@ body {
         border: 2px solid #00000088;
         margin-top: 3px;
         margin-bottom: 3px;
-    }
-/* #endregion footer bigscreen*/
+      }
+    /* #endregion footer bigscreen*/
 }
 @media only screen and (min-width: 1100) {
     .item3 {
