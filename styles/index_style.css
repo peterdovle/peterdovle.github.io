@@ -21,7 +21,7 @@
 #topNavbar a {
     float: left;
     color: #78fbcf;
-    padding: 6px 10px;
+    padding: 8px 20px;
     border: 2px solid #083157;
     text-align: center;
     text-decoration: none;
@@ -51,6 +51,10 @@ body {
         text-align: center;
         color: #00cccc;
         font-size: 125%;
+    }
+    img {
+        border: solid 4px #007777;
+        border-radius: 5px;
     }
     #aboutMeGrid {
         margin-top: 10px;
@@ -143,6 +147,10 @@ body {
   /* google */
   .fa-envelope {
     background-color: #e92c2c;
+    color: white;
+  }
+  .fa-phone {
+    background-color: #83ee00;
     color: white;
   }
 /* #endregion Footer*/
@@ -252,9 +260,22 @@ body {
       }
     /* #endregion footer bigscreen*/
 }
+
 @media only screen and (min-width: 1100) {
     .item3 {
         font-size: 125%;
     }
 }
-    
+
+@media only screen and (max-width: 374px) {
+    #topNavbar a {
+        float: left;
+        color: #78fbcf;
+        padding: 6px 10px;
+        border: 2px solid #083157;
+        text-align: center;
+        text-decoration: none;
+        margin: 3px;
+        border-radius: 8px;
+    }
+}    

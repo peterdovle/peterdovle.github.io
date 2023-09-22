@@ -58,7 +58,6 @@ body {
         color: #00cccc;
         font-size: 125%;
     }
-
     #Microbit_SCD30 {
         margin-top: 10px;
     }
@@ -135,27 +134,31 @@ body {
     margin-bottom: 3px;
 }   
       /* Add a hover effect if you want */
-      .fa:hover {
+    .fa:hover {
         opacity: 0.5;
-      }
+    }
       
       /* Set a specific color for each brand */
       
       /* Facebook */
-      .fa-facebook {
+    .fa-facebook {
         background: #3B5998;
         color: white;
-      }
+    }
     
       /* github */
-      .fa-github {
+    .fa-github {
         background-color: #008b8b;
         color: white;
-      }
+    }
     
       /* google */
-      .fa-envelope {
+    .fa-envelope {
         background-color: #e92c2c;
+        color: white;
+    }
+    .fa-phone {
+        background-color: #83ee00;
         color: white;
       }
 /* #endregion Footer*/
@@ -272,5 +275,17 @@ body {
 @media only screen and (min-width: 1100) {
     .item3 {
         font-size: 125%;
+    }
+}
+@media only screen and (max-width: 374px) {
+    #topNavbar a {
+        float: left;
+        color: #78fbcf;
+        padding: 6px 10px;
+        border: 2px solid #083157;
+        text-align: center;
+        text-decoration: none;
+        margin: 3px;
+        border-radius: 8px;
     }
 }
